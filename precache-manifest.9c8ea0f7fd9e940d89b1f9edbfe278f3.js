@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dbdb38af73f47cf548f86027d328f37e",
+    "revision": "b27629f96cf4fa466e8bfc062dc1bcad",
     "url": "/uppskriftir2/index.html"
   },
   {
-    "revision": "1fa1762022899aeae46e",
+    "revision": "f913a33caef2583f7a67",
     "url": "/uppskriftir2/static/css/main.795991f2.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/uppskriftir2/static/js/2.e3bf2b39.chunk.js"
   },
   {
-    "revision": "1fa1762022899aeae46e",
-    "url": "/uppskriftir2/static/js/main.fa2668c1.chunk.js"
+    "revision": "f913a33caef2583f7a67",
+    "url": "/uppskriftir2/static/js/main.9c59dd7c.chunk.js"
   },
   {
     "revision": "212f61127ea55bccb23f",
