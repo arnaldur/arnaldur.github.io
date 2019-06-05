@@ -18,10 +18,10 @@ function RecipeDetailRoute({match}) {
 
 function AppRouter() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Navbar bg="dark" variant="dark">
-          <Navbar.Brand href="/ ">
+          <Navbar.Brand href="/">
             <img
               alt=""
               src={sigga_logo}

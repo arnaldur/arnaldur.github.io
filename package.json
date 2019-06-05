@@ -22,7 +22,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://arnaldur.github.io/uppskriftir2",
+  "homepage": "https://arnaldur.github.io",
   "eslintConfig": {
     "extends": "react-app"
   },
