@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/uppskriftir2/static/css/main.795991f2.chunk.css",
-    "main.js": "/uppskriftir2/static/js/main.9c59dd7c.chunk.js",
-    "main.js.map": "/uppskriftir2/static/js/main.9c59dd7c.chunk.js.map",
-    "runtime~main.js": "/uppskriftir2/static/js/runtime~main.16e0aab8.js",
-    "runtime~main.js.map": "/uppskriftir2/static/js/runtime~main.16e0aab8.js.map",
-    "static/js/2.e3bf2b39.chunk.js": "/uppskriftir2/static/js/2.e3bf2b39.chunk.js",
-    "static/js/2.e3bf2b39.chunk.js.map": "/uppskriftir2/static/js/2.e3bf2b39.chunk.js.map",
-    "index.html": "/uppskriftir2/index.html",
-    "precache-manifest.9c8ea0f7fd9e940d89b1f9edbfe278f3.js": "/uppskriftir2/precache-manifest.9c8ea0f7fd9e940d89b1f9edbfe278f3.js",
-    "service-worker.js": "/uppskriftir2/service-worker.js",
-    "static/css/main.795991f2.chunk.css.map": "/uppskriftir2/static/css/main.795991f2.chunk.css.map",
-    "static/media/logo.svg": "/uppskriftir2/static/media/logo.7098ef04.svg"
+    "main.css": "/static/css/main.795991f2.chunk.css",
+    "main.js": "/static/js/main.a5650ea3.chunk.js",
+    "main.js.map": "/static/js/main.a5650ea3.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.e3bf2b39.chunk.js": "/static/js/2.e3bf2b39.chunk.js",
+    "static/js/2.e3bf2b39.chunk.js.map": "/static/js/2.e3bf2b39.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.7861e8758762f21d08de645b5e054169.js": "/precache-manifest.7861e8758762f21d08de645b5e054169.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.795991f2.chunk.css.map": "/static/css/main.795991f2.chunk.css.map",
+    "static/media/logo.svg": "/static/media/logo.7098ef04.svg"
   }
 }
