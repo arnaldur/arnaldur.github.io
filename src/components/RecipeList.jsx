@@ -2,7 +2,9 @@ import React from "react";
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import RecipeName from './RecipeName';
+import FormControl from 'react-bootstrap/FormControl'
+import RecipeName from './RecipeName'
+import TagList from './TagList'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
@@ -12,7 +14,8 @@ class RecipeList extends React.Component {
     this.state = {
       error: null,
       isLoaded: false,
-      items: []
+      items: [],
+      active_filter: null
     };
   }
 
@@ -39,21 +42,55 @@ class RecipeList extends React.Component {
       )
   }
 
+  onChange(event) {
+    var filterValue = event.target.value;
+    this.setState({
+      active_filter: filterValue
+    });
+    this.render();
+  }
+
   render() {
-    const { error, isLoaded, items } = this.state;
+    const { error, isLoaded, items, active_filter } = this.state;
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
-      return <Container><Row><Col><div>Loading...</div></Col></Row></Container>;
+      return <Container className='mt-5'><Row><Col><div>Loading...</div></Col></Row></Container>;
     } else {
+      var filtered_items = items;
+
+      if(active_filter != null) {
+        filtered_items = filtered_items.filter(function(item){
+          return item.name.toLowerCase().search(active_filter.toLowerCase()) !== -1;
+        });
+      }
       return (
-          <Container className='mt-5'><Row><Col>
-          {items.map(item => (
-            <div key={item.name}>
-              <Link to={`/recipes/${item.name}`}><RecipeName sha={item.sha} name={item.name}/> </Link>
-            </div>
-          ))}
-        </Col></Row></Container>
+          <Container className='mt-5'>
+            <Row className='mb-4'>
+              <Col>
+                <TagList/>
+              </Col>
+            </Row>
+            <Row className='mb-4'>
+              <Col>
+                <FormControl
+                  onChange={this.onChange.bind(this)}
+                  placeholder="Leit"
+                />
+              </Col>
+            </Row>
+            <Row className='mb-4'>
+              <Col>
+              {filtered_items.map(item => (
+                <div key={item.name}>
+                  <Link to={`/recipes/${item.name}`}>
+                    <RecipeName sha={item.sha} name={item.name}/>
+                  </Link>
+                </div>
+              ))}
+              </Col>
+            </Row>
+          </Container>
       );
     }
   }

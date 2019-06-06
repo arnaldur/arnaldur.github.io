@@ -4,6 +4,12 @@
 - [ ] Handle tags
 - [ ] Search/filter by tags
 - [ ] Editor interface
+- [ ] Sidenotes after pagebreak in markdown
+- [ ] Tag cloud in list
+- [ ] Filter recipe names
+- [ ] Photo upload
+- [ ] Find proper hosting
+- [ ] Test Node + React hosting with mongo
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

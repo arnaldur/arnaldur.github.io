@@ -38,6 +38,10 @@ class RecipeDetail extends React.Component {
       )
   }
 
+  onError(e) {
+    e.target.setAttribute("src", "");
+  }
+
   render() {
     const { error, isLoaded, data } = this.state;
     console.log(data);
@@ -51,7 +55,7 @@ class RecipeDetail extends React.Component {
         <Container className='mt-5'>
           <Row>
             <Col>
-              <Image src={recipe_image} fluid />
+              <Image fluid src={recipe_image} onError={this.onError}/>
               <ReactMarkdown source={data} />
             </Col>
           </Row>

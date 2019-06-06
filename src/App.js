@@ -1,8 +1,7 @@
 import React from "react";
 import Navbar from 'react-bootstrap/Navbar'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import RecipeName from './components/RecipeName';
 import RecipeList from './components/RecipeList';
 import RecipeDetail from './components/RecipeDetail';
 
@@ -25,9 +24,9 @@ function AppRouter() {
             <img
               alt=""
               src={sigga_logo}
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
+              width="50"
+              height="50"
+              className="ml-5 mr-3 d-inline-block align-center"
             />
             {'  Eldhús Siggu'}
           </Navbar.Brand>
